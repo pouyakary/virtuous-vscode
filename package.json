@@ -1,7 +1,7 @@
 {
     "description":     "The JSON Formatter that implements the Kary Coding Standards",
     "displayName":     "Virtuous",
-    "icon":            "./icon.png",
+    "icon":            "icon.png",
     "main":            "./out/extension.js",
     "name":            "virtuous-vscode",
     "publisher":       "karyfoundation",
