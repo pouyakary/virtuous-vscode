@@ -1,12 +1,12 @@
 {
     "description":     "The JSON Formatter that implements the Kary Coding Standards",
     "displayName":     "Virtuous",
-    "icon":            "icon.png",
+    "icon":            "https://user-images.githubusercontent.com/2157285/98836307-c83a8d80-2456-11eb-8d66-72e8c1dee56f.png",
     "main":            "./out/extension.js",
     "name":            "virtuous-vscode",
     "publisher":       "karyfoundation",
     "repository":      "http://codes.kary.us/coding-standards/formatters/virtuous/viscose",
-    "version":         "0.0.2",
+    "version":         "0.0.3",
     "engines": {
         "vscode":      "^1.51.0"
     },
