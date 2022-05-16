@@ -6,7 +6,7 @@
     "name":            "virtuous-vscode",
     "publisher":       "karyfoundation",
     "repository":      "https://github.com/pouyakary/virtuous-vscode",
-    "version":         "0.0.6",
+    "version":         "0.0.7",
     "engines": {
         "vscode":      "^1.51.0"
     },

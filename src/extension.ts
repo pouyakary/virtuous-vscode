@@ -47,19 +47,21 @@
 //
 
 	function registerFormatter ( context: vscode.ExtensionContext ) {
-		context.subscriptions.push(
-			vscode.languages.registerDocumentFormattingEditProvider( "json", {
-				provideDocumentFormattingEdits: ( document, options, token ) =>
-					formatWithVirtuous( document )
-			})
-		)
+		for ( const language of [ "json", "jsonc" ] ) {
+			context.subscriptions.push(
+				vscode.languages.registerDocumentFormattingEditProvider( language, {
+					provideDocumentFormattingEdits: ( document, options, token ) =>
+						formatWithVirtuous( document )
+				})
+			)
 
-		context.subscriptions.push(
-			vscode.languages.registerDocumentRangeFormattingEditProvider( "json", {
-				provideDocumentRangeFormattingEdits: ( document, range, options, token ) =>
-					formatWithVirtuous( document )
-			})
-		)
+			context.subscriptions.push(
+				vscode.languages.registerDocumentRangeFormattingEditProvider( language, {
+					provideDocumentRangeFormattingEdits: ( document, range, options, token ) =>
+						formatWithVirtuous( document )
+				})
+			)
+		}
 	}
 
 // ────────────────────────────────────────────────────────────────────────────────
