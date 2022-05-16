@@ -5,8 +5,8 @@
     "main":            "./out/extension.js",
     "name":            "virtuous-vscode",
     "publisher":       "karyfoundation",
-    "repository":      "https://github.com/pmkark/virtuous-vscode",
-    "version":         "0.0.4",
+    "repository":      "https://github.com/pouyakary/virtuous-vscode",
+    "version":         "0.0.6",
     "engines": {
         "vscode":      "^1.51.0"
     },
@@ -14,7 +14,8 @@
         "Formatters"
     ],
     "activationEvents": [
-        "onLanguage:json"
+        "onLanguage:json",
+        "onLanguage:jsonc",
     ],
     "scripts": {
         "compile":                 "tsc -p ./",
@@ -38,6 +39,6 @@
         "vscode-test":                         "^1.4.0"
     },
     "dependencies": {
-        "@kary/virtuous":      "^1.0.0"
+        "@kary/virtuous":      "^1.1.0"
     }
 }
